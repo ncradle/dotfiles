@@ -4,6 +4,7 @@
 
 # white list
 !/.zshrc
+!/.bashrc
 
 !/README.md
 !.gitignore
