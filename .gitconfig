@@ -1,2 +1,5 @@
 [include]
 	path = ~/.gitconfig.local
+
+[alias]
+	lol = log --graph --pretty=format:'%C(auto) %h %Cgreen %ar %C(auto) %x09 %s %d'
