@@ -3,8 +3,12 @@
 /.**
 
 # white list
-!/.zshrc
+!/.aliases
+!/.bash_profile
 !/.bashrc
+!/.zprofile
+!/.zshrc
+
 
 !/README.md
 !.gitignore

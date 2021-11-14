@@ -1,0 +1,5 @@
+alias ls='ls --color=auto'
+alias la='ls -A'
+alias grep='grep --color=auto'
+alias ip='ip -color=auto'
+
