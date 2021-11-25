@@ -5,6 +5,8 @@ alias la='ls -A'
 alias lla='ll -A'
 alias less='less -R'
 alias grep='grep --color=always'
+alias grep='fgrep --color=always'
+alias grep='egrep --color=always'
 alias ip='ip -color=always'
 
 alias ..='cd ..'
