@@ -1,8 +1,8 @@
-alias ls='ls --color=auto'
+alias ls='ls --color=always --group-directories-first'
 alias ll='ls -l'
 alias la='ls -A'
-alias grep='grep --color=auto'
-alias ip='ip -color=auto'
+alias grep='grep --color=always'
+alias ip='ip -color=always'
 
 alias ..='cd ..'
 alias ...='cd ../..'
