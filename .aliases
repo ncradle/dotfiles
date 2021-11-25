@@ -1,6 +1,9 @@
 alias ls='ls --color=always --group-directories-first'
 alias ll='ls -l'
+alias l.='ls -l -d .*'
 alias la='ls -A'
+alias lla='ll -A'
+alias less='less -R'
 alias grep='grep --color=always'
 alias ip='ip -color=always'
 
