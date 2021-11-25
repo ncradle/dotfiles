@@ -1,6 +1,6 @@
 alias ls='ls --color=always --group-directories-first -v'
 alias ll='ls -l'
-alias l.='ls -l -d .*'
+alias l.='ls -d .*'
 alias la='ls -A'
 alias lla='ll -A'
 alias less='less -R'
