@@ -19,4 +19,6 @@ fi
 [[ -n "${key[PageUp]}"    ]] && bindkey -- "${key[PageUp]}"    beginning-of-buffer-or-history    
 [[ -n "${key[PageDown]}"  ]] && bindkey -- "${key[PageDown]}"  end-of-buffer-or-history    
 
+zstyle ':completion:*' menu select
+
 source ~/.aliases
