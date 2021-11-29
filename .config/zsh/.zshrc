@@ -21,4 +21,4 @@ fi
 
 zstyle ':completion:*' menu select
 
-source ~/.aliases
+source $XDG_CONFIG_HOME/.aliases
