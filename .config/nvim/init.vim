@@ -6,6 +6,9 @@ set cursorline
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+:let mapleader = "\<Space>"
+
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dracula/vim',{'as':'dracula'}
