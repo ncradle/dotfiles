@@ -20,4 +20,4 @@ call plug#end()
 colorscheme dracula
 
 runtime ./coc.vim
-runtime ./nvim-lualine.vim
+runtime ./lualine.vim
