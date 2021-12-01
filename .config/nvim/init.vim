@@ -15,9 +15,15 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dracula/vim',{'as':'dracula'}
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'antoinemadec/FixCursorHold.nvim' "neef for fern.vim
+Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/nerdfont.vim'
+Plug 'lambdalisue/fern-renderer-nerdfont.vim'
 call plug#end()
 
 colorscheme dracula
 
 runtime ./coc.vim
 runtime ./lualine.vim
+runtime ./FixCursorHold.vim
+runtime ./fern.vim
