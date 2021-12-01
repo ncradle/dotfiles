@@ -13,8 +13,11 @@ let mapleader = "\<Space>"
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dracula/vim',{'as':'dracula'}
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
 
 colorscheme dracula
 
 runtime ./coc.vim
+runtime ./nvim-lualine.vim
