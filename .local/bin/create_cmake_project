@@ -1,0 +1,44 @@
+#!/bin/sh
+
+function help(){
+  echo "create cmake project"
+  exit
+}
+
+[[ -z $1 ]] && help
+
+project_name="$1"
+
+mkdir $project_name || exit
+mkdir $project_name/src
+mkdir $project_name/include
+mkdir $project_name/bin
+
+(
+  echo "cmake_minimum_required(VERSION 3.0.0)"
+  echo "project($project_name)"
+  echo "set(CMAKE_RUNTIME_OUTPUT_DIRECTORY \${PROJECT_SOURCE_DIR}/bin)"
+  echo "add_subdirectory(src)"
+) > $project_name/CMakeLists.txt
+
+(
+  echo "#!/bin/sh"
+  echo "mkdir -p bin"
+  echo "mkdir -p build"
+  echo "cd build"
+  echo "cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_BUILD_TYPE=Debug"
+  echo "cmake --build ."
+  echo "cp compile_commands.json"
+) > $project_name/cmake_build
+
+chmod u+x $project_name/cmake_build
+
+(
+  echo "#!/bin/sh"
+  echo "rm -rf ./build"
+  echo "rm -rf ./bin"
+) > $project_name/clean
+
+chmod u+x $project_name/clean
+  
+
