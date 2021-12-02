@@ -28,7 +28,7 @@ mkdir $project_name/bin
   echo "cd build"
   echo "cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_BUILD_TYPE=Debug"
   echo "cmake --build ."
-  echo "cp compile_commands.json"
+  echo "cp compile_commands.json ../"
 ) > $project_name/cmake_build
 
 chmod u+x $project_name/cmake_build
