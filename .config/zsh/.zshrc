@@ -22,3 +22,5 @@ fi
 zstyle ':completion:*' menu select
 
 source $XDG_CONFIG_HOME/.aliases
+
+export PATH=$PATH:$HOME/.local/bin
