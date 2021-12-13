@@ -3,3 +3,5 @@
 
 [alias]
 	lol = log --graph --all --pretty=format:'%x09 %C(auto) %h %Cgreen %ar %C(auto) %x09 %s %d'
+[init]
+	defaultBranch = master
