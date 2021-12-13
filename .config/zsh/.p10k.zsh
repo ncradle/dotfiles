@@ -350,11 +350,11 @@
 
   #####################################[ vcs: git status ]######################################
   # Version control system colors.
-  typeset -g POWERLEVEL9K_VCS_CLEAN_BACKGROUND=2
-  typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=3
-  typeset -g POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=2
-  typeset -g POWERLEVEL9K_VCS_CONFLICTED_BACKGROUND=3
-  typeset -g POWERLEVEL9K_VCS_LOADING_BACKGROUND=8
+  typeset -g POWERLEVEL9K_VCS_CLEAN_BACKGROUND=0
+  typeset -g POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=0
+  typeset -g POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=0
+  typeset -g POWERLEVEL9K_VCS_CONFLICTED_BACKGROUND=0
+  typeset -g POWERLEVEL9K_VCS_LOADING_BACKGROUND=0
 
   # Branch icon. Set this parameter to '\uF126 ' for the popular Powerline branch icon.
   typeset -g POWERLEVEL9K_VCS_BRANCH_ICON='\uF126 '
@@ -382,11 +382,11 @@
     fi
 
     # Styling for different parts of Git status.
-    local       meta='%7F' # white foreground
-    local      clean='%0F' # black foreground
-    local   modified='%0F' # black foreground
-    local  untracked='%0F' # black foreground
-    local conflicted='%1F' # red foreground
+    local       meta='%f' # default foreground
+    local      clean='%76F' # green foreground
+    local   modified='%178F' # yellow foreground
+    local  untracked='%39F' # blue foreground
+    local conflicted='%196' # red foreground
 
     local res
 
@@ -483,6 +483,9 @@
   # Enable counters for staged, unstaged, etc.
   typeset -g POWERLEVEL9K_VCS_{STAGED,UNSTAGED,UNTRACKED,CONFLICTED,COMMITS_AHEAD,COMMITS_BEHIND}_MAX_NUM=-1
 
+  typeset -g POWERLEVEL9K_VCS_VISUAL_IDENTIFIER_COLOR=76
+  typeset -g POWERLEVEL9K_VCS_LOADING_VISUAL_IDENTIFIER_COLOR=244
+
   # Custom icon.
   # typeset -g POWERLEVEL9K_VCS_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # Custom prefix.
@@ -492,6 +495,10 @@
   # using them. If you do, your prompt may become slow even when your current directory
   # isn't in an svn or hg reposotiry.
   typeset -g POWERLEVEL9K_VCS_BACKENDS=(git)
+
+  typeset -g POWERLEVEL9K_VCS_CLEAN_FOREGROUND=76
+  typeset -g POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND=76
+  typeset -g POWERLEVEL9K_VCS_MODIFIED_FOREGROUND=178
 
   ##########################[ status: exit code of the last command ]###########################
   # Enable OK_PIPE, ERROR_PIPE and ERROR_SIGNAL status states to allow us to enable, disable and
