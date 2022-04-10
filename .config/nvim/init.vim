@@ -19,6 +19,7 @@ Plug 'antoinemadec/FixCursorHold.nvim' "neef for fern.vim
 Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/nerdfont.vim'
 Plug 'lambdalisue/fern-renderer-nerdfont.vim'
+Plug 'vim-scripts/a.vim'
 call plug#end()
 
 colorscheme dracula
