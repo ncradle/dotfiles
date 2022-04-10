@@ -28,3 +28,4 @@ runtime ./coc.vim
 runtime ./lualine.vim
 runtime ./FixCursorHold.vim
 runtime ./fern.vim
+runtime ./a.vim
