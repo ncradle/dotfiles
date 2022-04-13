@@ -9,6 +9,7 @@ set autoindent          " autoindent
 " set lcs=tab:>.,trail:_,extends:\
 set list
 let mapleader = "\<Space>"
+set clipboard+=unnamedplus
 
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
