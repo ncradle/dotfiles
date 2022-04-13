@@ -219,3 +219,5 @@ bar {
 
 include /etc/sway/config.d/*
 xwayland disable
+
+assign [app_id="firefox"] 3
