@@ -69,3 +69,7 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 
 # for zoxide
 eval "$(zoxide init zsh)"
+
+# for fzf
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
