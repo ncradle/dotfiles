@@ -230,3 +230,5 @@ bindsym XF86AudioMute exec amixer sset Master toggle
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+
+exec wl-paste -t text --watch clipman store --no-persist
