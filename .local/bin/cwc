@@ -1,0 +1,11 @@
+#!/bin/sh
+
+function help(){
+  echo "save file content to clipboard"
+  exit
+}
+
+[[ -z $1 ]] && help
+
+cat $1 | wl-copy
+
